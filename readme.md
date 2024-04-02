@@ -3,5 +3,5 @@
 ## Database Structure
 
 <p align="center" width="100%">
-    <img width="33%" src="./public/img/Mini Chapter 04.png"> 
+    <img width="90%" src="./public/img/Mini Chapter 04.png"> 
 </p>
