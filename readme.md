@@ -3,7 +3,7 @@
 ## Database Structure
 
 <p align="center" width="100%">
-    <img width="90%" src="./public/images/ERD/erd_stock.jpg"> 
+    <img width="90%" src="./public/images/ERD/Mini Chapter 04.png"> 
 </p>
 
 <hr>
