@@ -2,29 +2,20 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, Sequelize) {
-		await queryInterface.createTable('Items', {
+		await queryInterface.createTable('Stocks', {
 			id: {
 				allowNull: false,
 				primaryKey: true,
 				type: Sequelize.STRING,
 			},
-			categoryId: {
+			companyId: {
 				type: Sequelize.STRING,
 			},
-			name: {
-				type: Sequelize.STRING,
-			},
-			imageUrl: {
-				type: Sequelize.STRING,
-			},
-			imageId: {
+			itemId: {
 				type: Sequelize.STRING,
 			},
 			stock: {
 				type: Sequelize.INTEGER,
-			},
-			price: {
-				type: Sequelize.FLOAT,
 			},
 			createdAt: {
 				allowNull: false,
@@ -37,6 +28,6 @@ module.exports = {
 		});
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable('Items');
+		await queryInterface.dropTable('Stocks');
 	},
 };

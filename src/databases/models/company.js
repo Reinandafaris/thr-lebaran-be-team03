@@ -21,11 +21,16 @@ module.exports = (sequelize, DataTypes) => {
 					name: 'itemId',
 				},
 			});
+
+			Company.belongsTo(models.Stock, {
+				foreignKey: {
+					name: 'companyId',
+				},
+			});
 		}
 	}
 	Company.init(
 		{
-			id: DataTypes.STRING,
 			userId: DataTypes.STRING,
 			name: DataTypes.STRING,
 		},

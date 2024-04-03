@@ -4,7 +4,17 @@
 	"description": "Mini Challenge Kelompok 3",
 	"main": "index.js",
 	"scripts": {
-		"start": "nodemon src/server.js"
+		"start": "nodemon src/server.js",
+		"db:migrate": "npx sequelize-cli db:migrate",
+		"migrate-category": "npx sequelize-cli db:migrate --name 20240402154050-create-category-item",
+		"migrate-item": "npx sequelize-cli db:migrate --name 20240402152538-create-item",
+		"migrate-user": "npx sequelize-cli db:migrate --name 20240402152824-create-user",
+		"migrate-auth": "npx sequelize-cli db:migrate --name 20240402153657-create-auth",
+		"migrate-company": "npx sequelize-cli db:migrate --name 20240402154130-create-company",
+		"migrate-stock": "npx sequelize-cli db:migrate --name 20240403041522-create-stock",
+		"db:undo-migrate": "npx sequelize-cli db:migrate:undo",
+		"db:undo-all-migrate": "npx sequelize-cli db:migrate:undo:all",
+		"db:seed": "npx sequelize-cli db:seed:all"
 	},
 	"author": "faris, viery, rizaldy, asyifa, qonita",
 	"license": "ISC",

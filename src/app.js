@@ -33,7 +33,11 @@ app.use(router);
 
 app.use((req, res) => {
 	const url = req.url;
-	res.render('errors/404', { url, code: 404 });
+	res.status(404).json({
+		status: false,
+		url: url,
+		message: 'Not Found!',
+	});
 });
 
 module.exports = app;

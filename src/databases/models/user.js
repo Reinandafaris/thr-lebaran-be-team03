@@ -28,12 +28,12 @@ module.exports = (sequelize, DataTypes) => {
 			});
 		}
 	}
+
 	User.init(
 		{
-			id: DataTypes.STRING,
-			companyId: DataTypes.STRING,
 			name: DataTypes.STRING,
 			role: DataTypes.ENUM('admin', 'user'),
+			companyId: DataTypes.STRING,
 			imageUrl: DataTypes.STRING,
 			imageId: DataTypes.STRING,
 		},
